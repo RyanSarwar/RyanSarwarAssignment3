@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a{
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace; 
+  }
+
+  .border-shadow{
+    border: 1px solid var(--dark);
+    box-shadow: 3px 3px 3px #000000;
+  }
+
+  .text-gradient{
+    background: linear-gradient(to right, rgb(131, 131, 131), #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fil-color: transparent;
+  }
+
+  body {
+    background-image: url("/assets/imgs/360_F_248813143_0Hn6ziX9B8FftE8SNjTdmbVEsplQFf65.jpg");
+    background-image: linear-gradient(#2d2d79, #141430);
+    background-size: cover; 
+  }
+
+  .navbar {
+    background-image: url("/assets/imgs/595bdb5761be76bcd325ba1360f2fdac.gif");
+    background-image: linear-gradient(#2e2e70, rgb(52, 77, 131), #213d66);
+    background-size: cover;
+    background-position: -1000px 460px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  #navbar__logo {
+    background-color: #ffffff;
+    background-image: rgb(11, 8, 49);
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 35px;
+    letter-spacing: 4px;
+  }
+  .fa-house-user {
+    margin-right: 8px;
+  }
+
+  .fa-folder-open{
+  margin-right: 8px;
+}
+
+.fa-camera-movie{
+  margin-right: 8px;
+}
+
+.fa-user-plus{
+  margin-right: 10px;
+  color:rgb(255, 255, 255)
+}
+.fa-trash{
+  margin-left: 10px;
+  color:rgb(255, 255, 255)
+}
+.fa-pencil-alt{
+  margin-left: 10px;
+  color:rgb(255, 255, 255)
+}
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 16px;
+    height: 100%;
+  }
+  
+  .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    width: 100%;
+  }
+  
+  .button {
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #355881;
+    color: #fff;
+  }
+  
+  .button:hover {
+    background: #4191a5;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    color: #89d9e7;
+    transition: all 0.3s ease;
+  }
+
+  #site-main{
+    margin-top: 1em;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+  #site-main .container form{
+    margin: 2em 0;
+  }
+
+  #site-main .container .box-nav > a{
+    font-size: 1em;
+    padding: .5em 1em;
+  }
+
+  table{
+    border-spacing: 0px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+  }
+
+  .table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+
+  }
+
+  .table td >a.btn{
+    padding: .3em 1em;
+    font-size: 1em;
+    margin: 0 .2em;
+  }
+
+  .table tr:hover{
+    background-color: rgb(46, 46, 46)
+  }
+
+  .table tr:hover  td > a{
+    box-shadow: none;
+  }
+
+  .table .thead-dark th {
+    color: rgb(255, 255, 255);
+    background-color: var(--dark);
+  }
+  
+  @media screen and (max-width: 960px) {
+    table, thead, tbody, th, td, tr{
+        display:block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999;
+        left: -9999;
+    }
+
+    tr {border: 1px solid var(--border);}
+
+    td{
+        border: none;
+        border-bottom: 1px solid var(--border);
+        position: relative;
+
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    margin-top: 867px;
+  }
+  
+  
+  

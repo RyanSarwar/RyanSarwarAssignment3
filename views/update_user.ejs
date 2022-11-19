@@ -1,0 +1,76 @@
+<!---HEADER--->
+<%-include('addons/_header2')%>
+
+<body>
+    <!--Creating custom navigation bar-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/home" id="navbar__logo"></i><span class="bolded"><i class="fa-light fa-camera-movie"></i>Movie Rental Tracker</span></a>
+          <!--Defines the mobile menu for the style sheet-->
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <!--Creating the buttons for the navigation bar-->
+          <li class="navbar__btn"><a href="/home" class="button"> <i class="fa-sharp fa-solid fa-house-user"></i>Home</a></li>
+          </li>
+          <li class="navbar__btn"><a href="/public" class="button"><i class="fa-sharp fa-solid fa-folder-open"></i>Public</a></li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!--Refers to the javascript file for the small animation for the mobile navigation bar-->
+<script src="/assets/js/app2.js"></script>
+<main id="site-main">
+<!---Creating the Update User Form--->
+  <div class="form-title">
+    <h2>
+      Update User
+    </h2>
+    <span>Use the Form Below to Update an Existing User to the Database</span>
+  </div>
+<form method="POST"id ="add_user">
+  <div class="new_user">
+    <div class="form-group">
+      <label for="FName">First Name</label> <!---Label--->
+      <input type="hidden" name="id" value=""> 
+      <input type="text" name="name" value="" placeholder="First Name" required> <!---Adds placeholder text and requires the textbox to be filled--->
+    </div>
+    <div class="form-group">
+      <label for="LName">Last Name</label>
+      <input type="hidden" name="id" value=""> <!---get the last name from the value--->
+      <input type="text" name="name" value="" placeholder="Last Name" required>
+    </div>
+    <div class="form-group">
+      <label for="Movie">Movie Title</label>
+      <input type="hidden" name="id" value="">
+      <input type="text" name="name" value="" placeholder="Movie Title" required>
+    </div>
+    <div class="form-group">
+      <label for="Name">Date Rented</label>
+      <input type="hidden" name="id" value="">
+      <input type="date" name="date" value="" placeholder="Date Rented" min="2022-11-18" max="2023-12-31" required>
+    </div>
+    <div class="form-group">
+      <label for="Name">Date Returned</label>
+      <input type="hidden" name="id" value="">
+      <input type="date" name="date" value="" placeholder="Date Returned" min="2022-11-18" max="2023-12-31" required>
+    </div>
+    <div class="form-group">
+      <label for="Name">Rental Fee</label>
+      <input type="hidden" name="id" value="">
+      <input type="number" name="number" value="" placeholder="Rental Fee ($)" required>
+    </div>
+  </div>
+
+<!---Submit Button Creation--->
+  <div class="form-group">
+    <button type="submit" class="btn text-dark update">
+      Edit Current Entry 
+    </button>
+  </div>
+</main>
+
+<!---FOOTER--->
+<%-include('addons/_footer')%>
